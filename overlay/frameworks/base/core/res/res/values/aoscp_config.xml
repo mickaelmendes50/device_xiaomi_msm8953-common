@@ -32,4 +32,7 @@
        config to 19. -->
     <integer name="config_deviceHardwareKeys">83</integer>
 
+    <!-- Internal default to navigation bar value -->
+    <bool name="config_defaultToNavigationBar">false</bool>
+
 </resources>
