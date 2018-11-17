@@ -21,13 +21,6 @@ $(call inherit-product, vendor/xiaomi/msm8953-common/msm8953-common-vendor.mk)
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
-#PRODUCT_ENFORCE_RRO_TARGETS := \
-#    Bluetooth \
-#    Settings \
-#    SettingsProvider \
-#    SystemUI \
-#    framework-res \
-
 # Screen density
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
@@ -149,14 +142,6 @@ PRODUCT_PACKAGES += \
     vendor.display.config@1.0 \
     vendor.display.config@1.0_vendor
 
-# Doze mode
-PRODUCT_PACKAGES += \
-    XiaomiDoze
-
-# XiaomiParts
-PRODUCT_PACKAGES += \
-    XiaomiParts
-
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.0-impl \
@@ -260,6 +245,10 @@ PRODUCT_PACKAGES += \
     netutils-wrapper-1.0 \
     android.system.net.netd@1.0 \
     libandroid_net
+
+# Offline charging animation
+PRODUCT_PACKAGES += \
+    charger_res_images
 
 # OMX
 PRODUCT_PACKAGES += \
