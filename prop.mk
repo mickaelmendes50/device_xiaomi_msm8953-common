@@ -184,3 +184,7 @@ persist.sys.usb.config.extra=none
 # Wifi
 PRODUCT_PROPERTY_OVERRIDES += \
 wifi.interface=wlan0
+
+# Force disable blank
+debug.force_no_blanking=true
+
